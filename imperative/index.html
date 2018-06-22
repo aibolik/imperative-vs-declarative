@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Imperative UI</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #btn {
+      margin: 50px auto;
+      padding: 10px 16px;
+      font-size: 16px;
+    }
+
+    #btn.shining {
+      animation: shine 1s infinite 0s linear;
+    }
+
+    @keyframes shine {
+      0% {
+        box-shadow: 0 0 10px red;
+      }
+      50% {
+        box-shadow: 0 0 10px green;
+      }
+      100% {
+        box-shadow: 0 0 10px blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="btn">Make me shine!</button>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
